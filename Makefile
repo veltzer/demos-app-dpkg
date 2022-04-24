@@ -6,6 +6,6 @@ tools.stamp: config/deps.py
 	$(info doing [$@])
 	@pymakehelper touch_mkdir $@
 
-.PHONY: clean
-clean:
+.PHONY: clean_hard
+clean_hard:
 	@git clean -qffxd
